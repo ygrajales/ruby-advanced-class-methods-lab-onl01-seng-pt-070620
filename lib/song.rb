@@ -51,7 +51,7 @@ class Song
     # artist_name = artist_song[0]
     # song_name = artist_song[1].chomp(".mp3")
     
-    parse_filename(filename)
+    filename.parse_filename(filename)
     
     song = self.new 
     song.name = song_name
