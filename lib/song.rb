@@ -51,8 +51,9 @@ class Song
     artist_name = artist_song[0]
     song_name = artist_song[1].chomp(".mp3")
     
-    self.new_by_name(song_name)
-    self.artist_name = artist_name
+    song = self.new 
+    song.name = song_name
+    song.artist_name = artist_name
     song
     
   end
